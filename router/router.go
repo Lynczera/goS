@@ -11,4 +11,7 @@ func SetupRoutes(r *gin.Engine) {
 	healthGroup := r.Group("/health")
 	routes.SetupHealthRoutes(healthGroup)
 
+	tvGroup := r.Group("/tv")
+	routes.SetupTvRoutes(tvGroup)
+
 }
